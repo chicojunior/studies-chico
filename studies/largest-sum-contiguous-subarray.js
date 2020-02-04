@@ -1,3 +1,5 @@
+// https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/
+
 const list = [-2, -3, 4, -1, -2, 1, 5, -3];
 
 const largestSumContiguousSubarray = numberList => {
