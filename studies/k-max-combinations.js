@@ -1,3 +1,5 @@
+// https://www.geeksforgeeks.org/k-maximum-sum-combinations-two-arrays/
+
 const kMaxCombinations = (firstList, secondList, listLength, numberOfCombinations) => {
   let sumList = [];
 
