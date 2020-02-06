@@ -10,9 +10,8 @@ class Node {
 }
 
 class LinkedList {
-
   constructor(equalsFn = defaultEquals) {
-    this.count = 0;
+    this.length = 0;
     this.head = undefined;
     this.equalsFn = equalsFn;
   }
@@ -29,9 +28,38 @@ class LinkedList {
         current = current.next;
       }
     }
-    this.count++;
+    this.length++;
   }
 
+  removeAt(index) {
+    if (index >= 0 && index < this.length) {
+      let current = this.head;
+
+      if (index === 0) {
+        this.head = current.next;
+      } else {
+        const previous = this.getElementAt(index - 1);
+        current = previous.next;
+        previous.next = current.next;
+      }
+      this.length--;
+      return current.element;
+    }
+
+    return undefined;
+  }
+
+  getElementAt(index) {
+    if (index >= 0 && index <= this.length) {
+      let node = this.head;
+      for (let i = 0; i < index && node != null; i++) {
+        node = node.next;
+      }
+      return node;
+    }
+    return undefined;
+  }
 }
 
+module.exports = Node;
 module.exports = LinkedList;

@@ -1,25 +1,27 @@
 {
   "name": "benchmark-francisco",
   "version": "1.0.0",
+  "description": "Project for host the tasks defined by the benchmark program.",
   "main": "index.js",
-  "repository": "git@git.epam.com:Francisco_Do_Vale/benchmark-francisco.git",
-  "author": "Francisco do Vale <francisco_do_vale@epam.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "eslint": "^6.8.0",
-    "jest": "^25.1.0"
-  },
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "jest": {
-    "testEnvironment": "node",
-    "collectCoverage": true,
-    "coverageReporters": [
-      "json",
-      "html"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git@git.epam.com:Francisco_Do_Vale/benchmark-francisco.git"
+  },
+  "author": "Francisco do Vale <francisco_do_vale@epam.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "install-peerdeps": "^2.0.1",
+    "jest": "^25.1.0",
+    "prettier": "1.19.1"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.18.2"
   }
 }
