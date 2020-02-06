@@ -1,0 +1,17 @@
+const fibonacci = (n) => n <= 1 ? n : fibonacci(n-1) + fibonacci(n-2);
+
+
+What is a Promise?
+A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
+Promises are eager, meaning that a promise will start doing whatever task you give it as soon as the promise constructor is invoked.
+
+What is a Closure?
+A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function. In JavaScript, closures are created every time a function is created, at function creation time.
+To use a closure, define a function inside another function and expose it. To expose a function, return it or pass it to another function.
+The inner function will have access to the variables in the outer function scope, even after the outer function has returned.
+
+What’s the Difference Between Class & Prototypal Inheritance?
+- Class Inheritance: A class is like a blueprint — a description of the object to be created. Classes inherit from classes and create subclass relationships: hierarchical class taxonomies. Instances are typically instantiated via constructor functions with the `new` keyword. Class inheritance may or may not use the `class` keyword from ES6. Classes as you may know them from languages like Java don’t technically exist in JavaScript. Constructor functions are used, instead.
+- Prototypal Inheritance: A prototype is a working object instance. Objects inherit directly from other objects. Instances may be composed from many different source objects, allowing for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. In other words, class taxonomies are not an automatic side-effect of prototypal OO: a critical distinction. Instances are typically instantiated via factory functions, object literals, or `Object.create()`.
+
+JavaScript Event Loop
