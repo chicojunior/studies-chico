@@ -1,7 +1,3 @@
-function defaultEquals(a, b) {
-  return a === b;
-}
-
 class Node {
   constructor(element) {
     this.element = element;
@@ -10,12 +6,11 @@ class Node {
 }
 
 class LinkedList {
-  constructor(equalsFn = defaultEquals) {
+  constructor() {
     this.length = 0;
     this.head = undefined;
-    this.equalsFn = equalsFn;
-	}
-	
+  }
+
   insertAtPosition(node, position) {
     let current;
     if (position === 0) {
@@ -29,7 +24,7 @@ class LinkedList {
       previous.next = node;
     }
 
-		this.length++;
+    this.length++;
   }
 
   insertOnTail(node) {
@@ -40,9 +35,9 @@ class LinkedList {
       current = this.head;
       while (current.next != null) {
         current = current.next;
-			}
-			
-			current.next = node;
+      }
+
+      current.next = node;
     }
     this.length++;
   }
@@ -55,7 +50,7 @@ class LinkedList {
     }
 
     if (index >= 0 && index <= this.length) {
-			return this.insertAtPosition(node, index);
+      return this.insertAtPosition(node, index);
     }
 
     return false;
