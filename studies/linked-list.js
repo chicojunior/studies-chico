@@ -1,3 +1,5 @@
+// https://www.geeksforgeeks.org/circular-linked-list-set-2-traversal/
+
 const equals = (a, b) => a === b;
 
 class Node {
