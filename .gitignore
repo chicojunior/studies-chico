@@ -318,6 +318,8 @@ fabric.properties
 .idea/**/markdown-navigator/
 .idea
 
+coverage/
+
 # End of https://www.gitignore.io/api/webstorm,visualstudiocode
 
 # End of https://www.gitignore.io/api/test,node,windows

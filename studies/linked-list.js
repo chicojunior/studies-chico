@@ -171,5 +171,5 @@ class CircularLinkedList extends LinkedList {
   }
 }
 
-module.exports = Node;
-module.exports = LinkedList;
+
+module.exports = { LinkedList, CircularLinkedList };
