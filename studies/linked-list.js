@@ -1,3 +1,5 @@
+const equals = (a, b) => a === b;
+
 class Node {
   constructor(element) {
     this.element = element;
@@ -9,6 +11,25 @@ class LinkedList {
   constructor() {
     this.length = 0;
     this.head = undefined;
+  }
+
+  add(element, index = null) {
+    const node = new Node(element);
+
+    if (index == null) {
+      return this.insertOnTail(node);
+    }
+
+    if (index >= 0 && index <= this.length) {
+      return this.insertAtPosition(node, index);
+    }
+
+    return false;
+  }
+
+  remove(element) {
+    const index = this.indexOf(element);
+    return this.removeAt(index);
   }
 
   insertAtPosition(node, position) {
@@ -42,20 +63,6 @@ class LinkedList {
     this.length++;
   }
 
-  push(element, index = null) {
-    const node = new Node(element);
-
-    if (index == null) {
-      return this.insertOnTail(node);
-    }
-
-    if (index >= 0 && index <= this.length) {
-      return this.insertAtPosition(node, index);
-    }
-
-    return false;
-  }
-
   removeAt(index) {
     if (index >= 0 && index < this.length) {
       let current = this.head;
@@ -72,6 +79,17 @@ class LinkedList {
     }
 
     return null;
+  }
+
+  indexOf(element) {
+    let current = this.head;
+    for (let i = 0; i < this.length && current != null; i++) {
+      if (equals(element, current.element)) {
+        return i;
+      }
+      current = current.next;
+    }
+    return -1;
   }
 
   getElementAt(index) {
