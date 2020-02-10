@@ -15,3 +15,32 @@ What’s the Difference Between Class & Prototypal Inheritance?
 - Prototypal Inheritance: A prototype is a working object instance. Objects inherit directly from other objects. Instances may be composed from many different source objects, allowing for easy selective inheritance and a flat [[Prototype]] delegation hierarchy. In other words, class taxonomies are not an automatic side-effect of prototypal OO: a critical distinction. Instances are typically instantiated via factory functions, object literals, or `Object.create()`.
 
 JavaScript Event Loop
+
+
+Questions to know
+- What do you know about Software Development Lifecycle?
+  The SDLC is the sequence of steps that take place during the development of a piece of software.
+  The 7 stages of the SDLC:
+  1. Analysis and Planning
+  2. Requirements
+  3. Design and Prototyping
+  4. Software Development
+  5. Testing
+  6. Deployment
+  7. Maintenance and Updates
+
+- Can you list some processes of SDLC?
+  1. Waterfall
+  2. Agile and Scrum
+  3. Incremental and Iterative
+  4. V-Shaped
+  5. Spiral
+
+- What do you know about Agile Software Development?
+
+- Do you know the ASD principles?
+
+- What do you know about SCRUM?
+
+- What is the difference between SCRUM and Kanban?
+
