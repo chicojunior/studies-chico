@@ -7,7 +7,7 @@
     "test": "jest",
     "test:watch": "jest --watchAll",
     "test:coverage": "jest --coverage",
-    "update:coverage": "npm run test:coverage && git add . && git commit -m 'coverage update'",
+    "update:coverage": "npm run test:coverage && git add . && git commit -m 'coverage update'"
   },
   "jest": {
     "testEnvironment": "node",
