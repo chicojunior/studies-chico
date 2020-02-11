@@ -1,8 +1,8 @@
-class Tree {
+const Node = require('./binary-tree-node');
+class BinaryTree {
   constructor() {
     this.root = null;
   }
-
   insert(data) {
     if (this.root == null) {
       this.root = new Node(data);
@@ -52,7 +52,9 @@ class Tree {
   }
 }
 
-const list = [1, 2, 3, 4, 5, 6, 6, 6, 6];
-const tree1 = new Tree();
-tree1.createLevelOrder(list);
-tree1.traverse(tree1.root);
+module.exports = BinaryTree;
+
+// const list = [1, 2, 3, 4, 5, 6, 6, 6, 6];
+// const tree1 = new Tree();
+// tree1.createLevelOrder(list);
+// tree1.traverse(tree1.root);
